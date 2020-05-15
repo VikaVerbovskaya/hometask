@@ -8,15 +8,15 @@ public class Main {
         vika.displayAge();
         vika.displayName();
 
-        Person tolik = new Person("Tolik");
+        Person tolik = new Person();
         tolik.displayName();
+        tolik.displayAge();
 
-        Person vasya = new Person("Vasya", 34);
+        Person vasya = new Person();
         vasya.displayName();
         vasya.displayAge();
     }
 }
-
 class Person {
     String name;
     int age;
@@ -26,12 +26,13 @@ class Person {
         age = 27;
     }
     Person(String n){
-        n = name;
+
+        name = n;
     }
 
     Person(String n, int a) {
-        n = name;
-        a = age;
+        name = n;
+        age = a;
     }
 
     void displayName() {
