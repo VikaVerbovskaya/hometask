@@ -22,8 +22,6 @@ class Person {
     int age;
 
     Person() {
-        name = "Petya";
-        age = 27;
     }
     Person(String n){
 
